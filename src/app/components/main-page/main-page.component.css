@@ -1,0 +1,233 @@
+.grid-list {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  z-index: 0;
+}
+
+@media (max-width: 992px) {
+  .ayush {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .input-container {
+    /* display: flex; */
+    width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .main-cont-second {
+    /* background-color: red; */
+    height: 500px !important;
+  }
+  .main-cont-first {
+    /* background-color: red; */
+    height: 300px !important;
+  }
+}
+@media (max-width: 768px) {
+  .main-cont-first {
+    /* background-color: red; */
+    height: 400px !important;
+  }
+}
+.grid-item {
+  flex: 1;
+  display: flex;
+  font-size: 10px;
+  color: white;
+}
+
+.ayush .container {
+  padding: 1px;
+  z-index: 100;
+  width: auto !important;
+  position: fixed;
+}
+
+.container button {
+  background-color: white;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+  display: flex;
+  padding-right: 0px;
+  padding: 3px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.item1 {
+  /* background-color: rgba(248, 242, 242, 0.87); */
+  color: black;
+  position: absolute;
+  margin-left: 90px;
+  flex-direction: column;
+  z-index: 1;
+  max-height: 1000px !important;
+  width: auto;
+  margin-top: 70px;
+}
+
+.item1:hover {
+  z-index: 2;
+}
+.item2 {
+  background-color: white;
+  z-index: 1;
+  color: black;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  height: 3000px !important;
+  text-align: start;
+  margin-top: 70px;
+  max-height: 6000px !important;
+}
+
+.item3 {
+  background-color: rgba(248, 242, 242, 0.87);
+  margin-left: -10px;
+  margin-top: 70px;
+}
+
+.white-icon {
+  background-color: black;
+}
+
+.button {
+  display: block;
+  margin-bottom: 25px;
+  background-color: black;
+}
+
+.example-button-container {
+  margin-top: -235px;
+  position: fixed;
+}
+.main-container {
+  margin-top: -2000px;
+  width: 100% !important;
+  height: 100% !important;
+}
+.row {
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 55px !important;
+}
+
+/* Style for the label */
+label {
+  font-weight: bold;
+  display: block; /* Ensures the label takes up full width and pushes the input below */
+}
+
+/* Style for the input field */
+.ewb {
+  width: 20%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.details {
+  width: 85%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+input:hover {
+  border: 2px solid black;
+}
+
+h6 {
+  margin-top: 0;
+  font-weight: bold;
+}
+.mat-grid-tile {
+  padding: 10px;
+
+  border-radius: 4px;
+}
+
+.main-container {
+  max-height: 1000px !important;
+}
+.main-cont-first {
+  height: 218px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.secondDetails {
+  width: 100px; /* Adjust width as needed */
+  margin-right: 170px; /* Add spacing between label and input */
+  font-weight: normal;
+}
+
+.secInputdetails {
+  width: 50%; /* Adjust width as needed */
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 36px !important;
+  /* Other styling properties */
+}
+.main-cont-second {
+  height: 255px;
+}
+.main-cont-third {
+  height: 151px !important;
+}
+
+.main-cont-fourth {
+  height: 3000px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 6px;
+  text-align: left;
+}
+
+.thiirdInputDetails {
+  width: 90%;
+  padding: 4px;
+  margin: 2px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+input[type="text"]:hover {
+  border: 2px solid black;
+}
+.thirdtableContainer {
+  overflow-x: auto;
+}
+
+/* Scrollbar Track */
+.thirdtableContainer::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+/* Scrollbar Handle */
+.thirdtableContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+
+mat-radio-group {
+  margin-left: 220px;
+}

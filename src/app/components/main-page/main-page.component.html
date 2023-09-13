@@ -1,0 +1,246 @@
+<mat-grid-list cols="12" rowHeight="570px" gutterSize="10px" class="grid-list">
+  <!-- the first main grid -->
+
+  <div class="ayush">
+    <mat-grid-tile colspan="2" class="grid-item item1">
+      <div class="container">
+        <button mat-raised-button>BILTY ENTRY</button>
+        <button mat-raised-button>CROSSING ENTRY</button>
+        <button mat-raised-button>BOOKING CHALLAN</button>
+        <button mat-raised-button>PAID CHALLAN</button>
+        <button mat-raised-button>PAID RECEIPT</button>
+        <button mat-raised-button>CONSOLIDATE CHALLAN</button>
+        <button mat-raised-button>STOCK-TRANSFER CHALLAN</button>
+        <button mat-raised-button>STOCK IMPORT</button>
+        <button mat-raised-button>HIRE SLIP</button>
+        <button mat-raised-button>VEHICLE</button>
+      </div>
+    </mat-grid-tile>
+  </div>
+
+  <!-- the second main grid -->
+  <div class="ash">
+    <mat-grid-tile colspan="9" class="grid-item item2">
+      <div class="main-container">
+        <form action="">
+          <!-- this first starts -->
+          <div class="main-cont-first">
+            <div class="row">
+              <div class="col-12">
+                <label for="ewb">EWB No.</label>
+                <input class="ewb" id="ewb" type="text" />
+              </div>
+            </div>
+
+            <div class="second-row row">
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <label for="bilty">Bilty No.</label>
+                <input class="details" id="bilty" type="text" />
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <label for="Date">GR Date</label>
+                <input class="details" id="Date" type="date" />
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <label for="Station">Station</label>
+                <input class="details" id="Station" type="text" />
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <label for="type">GR Type</label>
+                <select class="details">
+                  <option
+                    class="options"
+                    *ngFor="let f of foods"
+                    [value]="f.name"
+                  >
+                    {{ f.name }}
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="type">Transport Mode</label>
+                <select class="details">
+                  <option
+                    class="options"
+                    *ngFor="let t of transport"
+                    [value]="t.place"
+                  >
+                    {{ t.place }}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- the first ends -->
+
+          <!-- the second starts -->
+
+          <div class="main-cont-second">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h6>CONSIGNOR DETAILS</h6>
+                <div *ngFor="let c of consigner" class="input-container">
+                  <label class="secondDetails" for="name">{{ c.name }}</label>
+                  <input class="secInputdetails" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h6>CONSIGNEE DETAILS</h6>
+                <div *ngFor="let c of consigner" class="input-container">
+                  <label class="secondDetails" for="name">{{ c.name }}</label>
+                  <input class="secInputdetails" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- the second ends -->
+
+          <!-- the third starts -->
+          <!-- TODO: isme scrolling add krni hai aur nhi thodi si cheeze;; -->
+          <div class="main-cont-third">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 xol-sm-12">
+                <h6>CONSIGNMENT DETAILS</h6>
+                <div class="thirdtableContainer col-lg-12">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Pkgs</th>
+                        <th>Packing</th>
+                        <th>Consignment</th>
+                        <th>HSN</th>
+                        <th>Actual Wght</th>
+                        <th>Unit</th>
+                        <th>Length</th>
+                        <th>Width</th>
+                        <th>Depth</th>
+                        <th>M.F.</th>
+                        <th>Charged Wght</th>
+                        <th>Unit</th>
+                        <th>Rate</th>
+                        <th>Freight</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                        <td>
+                          <input class="thiirdInputDetails" type="text" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- the third ends -->
+
+          <!-- the fourth starts -->
+          <div class="main-cont-fourth">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h6>Other Details</h6>
+                <label class="secondDetails" for="name">Delivery At</label>
+                <mat-radio-group>
+                  <mat-radio-button value="1">Door Div</mat-radio-button>
+                  <mat-radio-button value="2">Tpt Div</mat-radio-button>
+                  <mat-radio-button value="3">Party Div</mat-radio-button>
+                </mat-radio-group>
+                <div *ngFor="let o of others" class="input-container">
+                  <label class="secondDetails" for="name">{{ o.name }}</label>
+                  <input class="secInputdetails" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h6>Freight Details</h6>
+                <div *ngFor="let f of freight" class="input-container">
+                  <label class="secondDetails" for="name">{{ f.name }}</label>
+                  <input class="secInputdetails" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- the fourth ends -->
+        </form>
+      </div>
+    </mat-grid-tile>
+  </div>
+
+  <!-- third grid -->
+  <div class="ayush">
+    <mat-grid-tile colspan="1" class="grid-item item3">
+      <div class="example-button-container">
+        <button
+          class="button"
+          mat-fab
+          aria-label="Example icon button with a bookmark icon"
+        >
+          <mat-icon>search</mat-icon>
+        </button>
+
+        <button
+          class="button"
+          mat-fab
+          aria-label="Example icon button with a bookmark icon"
+        >
+          <mat-icon>bookmark</mat-icon>
+        </button>
+
+        <button
+          class="button"
+          mat-fab
+          aria-label="Example icon button with a bookmark icon"
+        >
+          <mat-icon>refresh</mat-icon>
+        </button>
+
+        <button
+          class="button"
+          mat-fab
+          aria-label="Example icon button with a bookmark icon"
+        >
+          <mat-icon>dialpad</mat-icon>
+        </button>
+      </div>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>

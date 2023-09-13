@@ -1,0 +1,22 @@
+<nav>
+  <input type="checkbox" id="check" />
+  <label for="check" class="checkbtn">
+    <mat-icon>clear_all</mat-icon>
+  </label>
+  <label class="logo">TRUCKSPOINT</label>
+  <ul>
+    <select class="navDetails">
+      <option [value]="2022 - 2023" *ngFor="let y of year">{{ y.year }}</option>
+    </select>
+
+    <li><a href="#">EWB</a></li>
+    <li><a href="#">LINKS</a></li>
+    <li><a href="#">DASHBOARD</a></li>
+    <li><a href="#">ENQUIRY</a></li>
+    <li><a href="#">MASTER</a></li>
+    <li><a href="#">UTILITY</a></li>
+    <li><a href="#">REGISTER</a></li>
+    <li><a href="#">ACCOUNTS</a></li>
+    <li><a href="#">MY ORDER</a></li>
+  </ul>
+</nav>
